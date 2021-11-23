@@ -158,6 +158,7 @@
             this.tyhjennaBT.TabIndex = 15;
             this.tyhjennaBT.Text = "TYHJENNÄ";
             this.tyhjennaBT.UseVisualStyleBackColor = true;
+            this.tyhjennaBT.Click += new System.EventHandler(this.tyhjennaBT_Click);
             // 
             // tallennaBT
             // 
@@ -167,6 +168,7 @@
             this.tallennaBT.TabIndex = 16;
             this.tallennaBT.Text = "TALLENNA";
             this.tallennaBT.UseVisualStyleBackColor = true;
+            this.tallennaBT.Click += new System.EventHandler(this.tallennaBT_Click);
             // 
             // poistaBT
             // 
@@ -176,6 +178,7 @@
             this.poistaBT.TabIndex = 18;
             this.poistaBT.Text = "POISTA";
             this.poistaBT.UseVisualStyleBackColor = true;
+            this.poistaBT.Click += new System.EventHandler(this.poistaBT_Click);
             // 
             // paivitaBT
             // 
@@ -185,6 +188,7 @@
             this.paivitaBT.TabIndex = 17;
             this.paivitaBT.Text = "PÄIVITÄ";
             this.paivitaBT.UseVisualStyleBackColor = true;
+            this.paivitaBT.Click += new System.EventHandler(this.paivitaBT_Click);
             // 
             // TietotauluDG
             // 
@@ -193,6 +197,7 @@
             this.TietotauluDG.Name = "TietotauluDG";
             this.TietotauluDG.Size = new System.Drawing.Size(746, 240);
             this.TietotauluDG.TabIndex = 19;
+            this.TietotauluDG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TietotauluDG_CellClick);
             // 
             // Form1
             // 
@@ -218,6 +223,7 @@
             this.Controls.Add(this.puhelinTB);
             this.Name = "Form1";
             this.Text = "Opiskelijarekisterin ylläpito";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TietotauluDG)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
